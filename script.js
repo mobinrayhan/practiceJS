@@ -143,8 +143,25 @@ function cards(product) {
 data.forEach((product) => {
   cards(product);
 });
-// let secBtns = document.querySelectorAll(".btn2");
-// let fstBtns = document.querySelectorAll(".btn1");
+
+const cardsList = document.querySelectorAll(".card");
+
+cardsList.forEach((card) => {
+  let secBtns = card.querySelector(".btn2");
+  let fstBtns = card.querySelector(".btn1");
+
+  secBtns.style.display = "none";
+
+  fstBtns.addEventListener("mouseover", (eve) => {
+    console.log(secBtns);
+    secBtns.style.display = "block";
+  });
+  fstBtns.addEventListener("mouseout", (eve) => {
+    console.log(secBtns);
+    secBtns.style.display = "none";
+  });
+});
+
 // // initial set none
 // for (const secBtn of secBtns) {
 //   secBtn.style.display = "none";

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Courier New";
+}
+.all-cards {
+  max-width: 950px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  max-width: 300px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 12px;
+}
+.card > img {
+  width: 100%;
+  border-radius: 12px;
+}
+.btns {
+  width: fit-content;
+
+  position: relative;
+  z-index: 1;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.btn {
+  background-color: blueviolet;
+  max-width: 200px;
+  padding: 10px 15px;
+  border-radius: 18px;
+  color: white;
+}
+
+/* .btn2 {
+  display: none;
+}
+.btn1:hover ~ .btn2 {
+  display: block;
+}
+.btn1 */
